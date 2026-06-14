@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Venues() {
   return (
     <section className="px-6 md:px-16 py-24 md:py-40">
@@ -10,14 +12,14 @@ export default function Venues() {
             POPÜLER MEKANLAR
           </p>
 
-          <h3 className="text-[36px] sm:text-[45px] md:text-[60px]
-          leading-[50px] md:leading-[70px]
-          text-[#2A2A2A] font-light">
-
+          <h3
+            className="text-[36px] sm:text-[45px] md:text-[60px]
+            leading-[50px] md:leading-[70px]
+            text-[#2A2A2A] font-light"
+          >
             En Zarif
             <br />
             Organizasyon Alanları.
-
           </h3>
 
         </div>
@@ -32,13 +34,16 @@ export default function Venues() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
         {/* Card 1 */}
-        <div className="group">
+        <Link
+          to="/venues/liva-garden"
+          className="group block transition-all duration-300 hover:-translate-y-2"
+        >
 
           <div className="h-[400px] md:h-[550px] rounded-[30px] md:rounded-[40px] overflow-hidden">
 
             <img
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1974&auto=format&fit=crop"
-              alt=""
+              alt="Liva Garden"
               className="w-full h-full object-cover group-hover:scale-110 duration-700"
             />
 
@@ -64,10 +69,10 @@ export default function Venues() {
 
           </div>
 
-        </div>
+        </Link>
 
         {/* Card 2 */}
-        <div className="group">
+        <div className="group transition-all duration-300 hover:-translate-y-2">
 
           <div className="h-[400px] md:h-[550px] rounded-[30px] md:rounded-[40px] overflow-hidden">
 
@@ -102,7 +107,7 @@ export default function Venues() {
         </div>
 
         {/* Card 3 */}
-        <div className="group">
+        <div className="group transition-all duration-300 hover:-translate-y-2">
 
           <div className="h-[400px] md:h-[550px] rounded-[30px] md:rounded-[40px] overflow-hidden">
 
@@ -139,5 +144,5 @@ export default function Venues() {
       </div>
 
     </section>
-  )
+  );
 }
