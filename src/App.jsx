@@ -6,6 +6,8 @@ import Venues from "./pages/Venues";
 import WhitePalace from "./pages/WhitePalace";
 import MoonlightHall from "./pages/MoonlightHall";
 import Contact from "./pages/Contact";
+import Organizations from "./pages/Organizations";
+import Wedding from "./pages/Wedding";
 
 export default function App() {
   return (
@@ -32,6 +34,16 @@ export default function App() {
       />
 
       <Route path="/contact" element={<Contact />} />
+
+      <Route
+      path="/organizations"
+      element={<Organizations />}
+      />
+
+      <Route
+  path="/organizations/wedding"
+  element={<Wedding />}
+/>
 
       </Routes>
     </BrowserRouter>

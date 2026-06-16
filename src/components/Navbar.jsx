@@ -23,12 +23,12 @@ return ( <nav className="w-full px-6 md:px-16 py-8 flex items-center justify-bet
     </li>
 
     <li>
-      <a
-        href="#"
+      <Link
+        to="/organizations"
         className="hover:text-black duration-300"
       >
         Organizasyonlar
-      </a>
+      </Link>
     </li>
 
    <li>
